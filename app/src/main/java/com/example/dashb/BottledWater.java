@@ -19,7 +19,7 @@ public class BottledWater extends AppCompatActivity {
     TextView textView2;
     TextView textView3;
     TextView textView4;
-    int currentNumber = 0;
+    private int currentNumber = 0;
     int currentNumber1 = 0;
     int currentNumber2 = 0;
     int currentNumber3 = 0;
@@ -33,15 +33,6 @@ public class BottledWater extends AppCompatActivity {
         textView2 = findViewById(R.id.zero3);
         textView3 = findViewById(R.id.zero4);
         textView4 = findViewById(R.id.zero5);
-
-        Button btn = findViewById(R.id.button21);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(BottledWater.this, CheckoutActivity.class);
-                startActivity(intent);
-            }
-        });
 
         ImageButton back = findViewById(R.id.back_ic);
         back.setOnClickListener(new View.OnClickListener() {
@@ -103,9 +94,13 @@ public class BottledWater extends AppCompatActivity {
     }
     public void checkouty(View view) {
         // Create an Intent to start the second activity
-        Intent intent = new Intent(this, CheckoutActivity.class);
+        Intent intent = new Intent(BottledWater.this, CheckoutActivity.class);
         // Pass the current number to the second activity
         intent.putExtra("NUMBER_KEY", currentNumber);
+        intent.putExtra("NUMBER_KEY_1", currentNumber1);
+        intent.putExtra("NUMBER_KEY_2", currentNumber2);
+        intent.putExtra("NUMBER_KEY_3", currentNumber3);
+        intent.putExtra("NUMBER_KEY_4", currentNumber4);
         // Start the second activity
         startActivity(intent);
     }

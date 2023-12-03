@@ -17,6 +17,25 @@ public class CheckoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
 
+        Intent intent = getIntent();
+        int number = intent.getIntExtra("NUMBER_KEY", 0);
+        int number1 = intent.getIntExtra("NUMBER_KEY_1", 0);
+        int number2 = intent.getIntExtra("NUMBER_KEY_2", 0);
+        int number3 = intent.getIntExtra("NUMBER_KEY_3", 0);
+        int number4 = intent.getIntExtra("NUMBER_KEY_4", 0);
+
+        // Display the number in a TextView
+        TextView itlog = findViewById(R.id.itlog);
+        TextView itlog1 = findViewById(R.id.itlog1);
+        TextView itlog2 = findViewById(R.id.itlog2);
+        TextView itlog3 = findViewById(R.id.itlog3);
+        TextView itlog4 = findViewById(R.id.itlog4);
+        itlog.setText(" " + number);
+        itlog1.setText(" " + number1);
+        itlog2.setText(" " + number2);
+        itlog3.setText(" " + number3);
+        itlog4.setText(" " + number4);
+
         ImageButton back = findViewById(R.id.back_ic);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,13 +52,6 @@ public class CheckoutActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        Intent intent = getIntent();
-        int number = intent.getIntExtra("NUMBER_KEY", 0);
-
-        // Display the number in a TextView
-        TextView tvResult = findViewById(R.id.itlog);
-        tvResult.setText(" " + number);
     }
     public void checkBtn(View view){
         boolean checked = ((RadioButton)view).isChecked();
