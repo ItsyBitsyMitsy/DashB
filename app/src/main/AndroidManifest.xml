@@ -14,6 +14,33 @@
         android:theme="@style/Theme.DashB"
         tools:targetApi="31">
         <activity
+            android:name=".experiment2"
+            android:exported="false" />
+        <activity
+            android:name=".experiment1"
+            android:exported="false" />
+        <activity
+            android:name=".BottledWater"
+            android:exported="false" />
+        <activity
+            android:name=".TapWater"
+            android:exported="false" />
+        <activity
+            android:name=".MineralStation"
+            android:exported="false" />
+        <activity
+            android:name=".Inbox"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".MyAddress"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSettings"
+            android:exported="false" />
+        <activity
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity

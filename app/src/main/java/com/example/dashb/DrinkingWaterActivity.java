@@ -29,7 +29,7 @@ public class DrinkingWaterActivity extends AppCompatActivity {
         tapCard1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DrinkingWaterActivity.this, CheckoutActivity.class);
+                Intent intent = new Intent(DrinkingWaterActivity.this, BottledWater.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class DrinkingWaterActivity extends AppCompatActivity {
         tapCard2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DrinkingWaterActivity.this, CheckoutActivity.class);
+                Intent intent = new Intent(DrinkingWaterActivity.this, BottledWater.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class DrinkingWaterActivity extends AppCompatActivity {
         tapCard3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DrinkingWaterActivity.this, CheckoutActivity.class);
+                Intent intent = new Intent(DrinkingWaterActivity.this, BottledWater.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class DrinkingWaterActivity extends AppCompatActivity {
         tapCard4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DrinkingWaterActivity.this, CheckoutActivity.class);
+                Intent intent = new Intent(DrinkingWaterActivity.this, BottledWater.class);
                 startActivity(intent);
             }
         });

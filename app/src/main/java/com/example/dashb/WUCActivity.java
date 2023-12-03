@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class WUCActivity extends AppCompatActivity {
 
@@ -60,5 +61,6 @@ public class WUCActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

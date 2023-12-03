@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DrinkingWaterActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -30,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, WUCActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView accSet = findViewById(R.id.textView24);
+        accSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AccountSettings.class);
                 startActivity(intent);
             }
         });
